@@ -12,7 +12,7 @@ export default function Home({ posts }) {
    return (
       <Layout>
          <Head>
-            <title>Jody's Blog</title>
+            <title>Jody&apos;s Blog</title>
          </Head>
          {/* Banner */}
          <section id="banner" className="major">
@@ -44,7 +44,7 @@ export default function Home({ posts }) {
 
                {posts.map((post) => {
                   return (
-                     <article>
+                     <article key={post.title}>
                         <span className="image">
                            <img src={`assets/images/${post.featured_image}`} alt="" />
                         </span>
